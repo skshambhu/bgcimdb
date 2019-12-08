@@ -3,10 +3,10 @@ BGC IMDB Movies Ratings
 
 ##How to build and deploy
 1. Clone this repo: `https://github.com/skshambhu/bgcimdb.git`
-2. To run the unit test `sbt test`
+2. To run the unit test `sbt test`. Unit test configurations are located at `src/test/resources/testImdbConf.properties`. Please update this. property file before executing `sbt test`
 3. To create Jar file run `sbt 'set test in assembly := {}' clean assembly`. Jar file will be created at `target/scala-2.11/ImdbAgg-assembly-1.0.jar`
 4. Download data from `https://datasets.imdbws.com/`
-5. Update `scala.properties` to all  configurations details
+5. Update `program.properties` configurations details
 
 `master=local[*]
  appName=BCG IMDB Ratings
